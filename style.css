@@ -1,0 +1,129 @@
+.container{
+    width: 100%;
+    min-width: 500px;
+    height: 100%;
+    min-height: 950px;
+    background-color: darkgrey;
+    
+}
+
+.frame{
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    background-color: white;
+    margin: auto;
+    position: relative;
+    
+    
+    
+}
+
+#header{
+    width: 100%;
+    height: 15%; 
+    background-color: inherit;
+    align-content: center;
+  
+
+}
+
+#logo{
+    height: 100%;
+    display: table-row;
+    margin-left: 10%;
+    
+}
+
+#feedback{
+    display: table-row;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-left: auto;
+    max-width: 30px;
+    vertical-align: middle;
+    float: inline-end;
+}
+
+#timerDiv{
+    background-color: green;
+}
+#timer{
+    text-align: center;
+    font-size: x-large;
+    margin-top: 20%;
+}
+
+#question{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-right: 10%;
+    margin-left: 10%;
+    
+
+}
+
+.btnMain{
+    align-content: center;
+    margin: auto;
+    width: 200px;
+    height: auto;
+    padding: 5px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    display: block;
+    font-size: medium;
+    font-weight: bold;
+   
+    
+}
+.btnMain:hover{
+    background-color: orange;
+}
+
+.levels{
+ 
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+}
+
+li {
+    list-style: none;
+    text-align: center;
+
+}
+
+.lvlBtn{
+    width: 20%;
+    height: 30px;
+    font-size: large;
+    background-color: inherit;
+    transform: none;
+    border: none;
+    color: darkgrey;
+    opacity: 60%;
+}
+.lvlBtn:active{
+    color: red;
+}
+.lvlBtn:hover{
+    color: blue;
+}
+
+#lvl1{
+    color: blue;
+}
+
+#timerDiv{
+    background-color: inherit;
+}
+
+#timer{
+    color: darkgrey;
+
+}
