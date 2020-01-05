@@ -15,7 +15,7 @@ const q1 =  [
 'What free time activity would you like to try for the first time?',
 'What memory makes you feel proud?',
 'Who would you go to a dinner with if you could choose anyone, dead or alive?', 
-'When was the last time you helped a person you didn’t know?',
+'When was the last time you helped a person you did not know?',
 'Who was your first best friend and how was he/she like?',
 'How would your best friend describe you?'
 
