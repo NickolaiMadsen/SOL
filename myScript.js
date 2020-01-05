@@ -7,6 +7,7 @@ const q1 =  [
     'How would you describe you best friend?',
     'What did you do 30 minutes before coming here',
     'When were the last time you laughed?'
+    
 ]
 
 //Create the cards in level 2
@@ -83,7 +84,7 @@ buttonElement3.addEventListener('click', function ( event){
     
 });
 
-//allowing the user to add question to the current level
+//User can add their own question in the current selected level
 const addQuestion = document.getElementById("feedback");
 addQuestion.addEventListener('click', function (event){
 const newQuestion = window.prompt("Add your own question to the game.");
@@ -93,19 +94,43 @@ else if(level = 3) {q3.push(newQuestion);}
 });
 
 
-//making a countdown timer - NOT FUNCTION YET
-var countDownTime = 120000;
-
-var x = window.setInterval(function(){
-    var start = 1000;
-    var distance = countDownTime - start;
-
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    document.getElementById("timer").innerHTML =  minutes + ":" + seconds;
-
-    if(distance <= 0 ) {clearInterval(x)
-    document.getElementById("timer").innerHTML = "DONE";}
+//Simple countdown timer
+var downloadTimer;
+var timeleft;
+function startTimer () {
+    timeleft = 119;
+downloadTimer = window.setInterval(function(){
+    
+  document.getElementById("timer").innerHTML = timeleft;
+  timeleft -= 1;
+  if(timeleft <= 0){
+    window.clearInterval(downloadTimer);
+    document.getElementById("timer").innerHTML = "Time is up"
+  }
 }, 1000);
+}//end of countdown timer
+
+if(document.getElementById("timer").innerHTML = "120"){
+startTimer();
+}
+
+function resetTimer(){
+   window.clearInterval(downloadTimer);
+   document.getElementById("timer").innerHTML = 120;
+   startTimer();
+   
+}   
+
+  
+//    downloadTimer = setInterval(function(){
+   
+//     document.getElementById("timer").innerHTML = timeleft;
+//     timeleft -= 1;
+//     if(timeleft <= 0){
+//       clearInterval(downloadTimer);
+//       document.getElementById("timer").innerHTML = "Time is up"
+//     }
+//   }, 1000);//end of countdown timer
+
+
 
